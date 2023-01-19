@@ -1,60 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../public/css/register.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="../public/css/register.css" />
     <title>GamePlayStore</title>
-</head>
-<body>
-    <header>
-        <section class="sec1">
-            <picture>
-                <a href="../index.html"><img src="../public/img/Logo img.jpg" alt="Logo"></a>
-            </picture>
-            
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="">PlayStation</a></li>
-                    <li><a href="">Xbox</a></li>
-                    <li><a href="">Nintendo</a></li>
-                </ul>
-            </nav>
-        </section>
-     
-     
+  </head>
+  <body>
+    <header class="register-header">
+      <picture>
+        <a href="../index.html"
+          ><img
+            class="reduced-logo"
+            src="../public/img/Reduced-Logo.jpg"
+            alt="Logo"
+        /></a>
+      </picture>
 
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="">PlayStation</a></li>
+          <li><a href="">Xbox</a></li>
+          <li><a href="">Nintendo</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <h1>Registration</h1>
+      <h1>Registration</h1>
 
-        <form action="/index.html" method="get">
-            <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Name" minlength="2">
-            <label for="surname">Surname</label>
-                <input type="text" name="surname" id="surname" placeholder="Surname" minlength="2">
-            <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="email">
-            <label for="id">Personal ID</label>
-                <input type="text" name="id" id="id">
-            <label for="password">Password</label>
-                <input type="text" name="password" id="password" placeholder="Password" minlength="6">
-            <label for="repassword">Re-Password</label>
-                <input type="text" name="re-password" id="re-password" placeholder="Re-Password" minlength="6">    
-            <input type="button" type="submit" value="Send">
-            <input type="button" type="reset" value="Reset">
-        </form>
-    
+      <form class="register-section" action="/index.html" method="get">
+        <div class="register-input-group">
+          <label for="first-name">Name</label>
+          <input
+            type="text"
+            name="first-name"
+            id="first-name"
+            placeholder="First Name"
+            minlength="2"
+            required />
+        </div>
+        <div class="register-input-group">
+          <label for="last-name">Surname</label>
+          <input
+            type="text"
+            name="last-name"
+            id="last-name"
+            placeholder="Last Name"
+            minlength="2"
+            required />
+        </div>
+        <div class="register-input-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required />
+        </div>
+        <div class="register-input-group">
+          <label for="id">Personal ID</label>
+          <input
+            type="text"
+            name="id"
+            id="id"
+            placeholder="ID Number"
+            required />
+        </div>
+        <div class="register-input-group">
+          <label for="password">Password</label>
+          <input
+            type="text"
+            name="password"
+            id="password"
+            placeholder="Password"
+            minlength="6"
+            required />
+        </div>
+        <div class="register-input-group">
+          <label for="repassword">Re-Password</label>
+          <input
+            type="text"
+            name="re-password"
+            id="re-password"
+            placeholder="Re-Password"
+            minlength="6"
+            required />
+        </div>
+        <input class="btn" type="submit" value="Send" />
+        <input class="btn" type="reset" value="Reset" />
+      </form>
     </main>
 
-    <footer>
-        <p>Copyright GamePlayStore 2023</p>
+    <footer class="register-footer">
+      <p>Copyright GamePlayStore 2023</p>
     </footer>
-</body>
+  </body>
 </html>
