@@ -15,35 +15,6 @@ main h1 {
   color: black;
 }
 
-.register-header {
-  display: flex;
-  justify-content: center;
-  gap: 60rem;
-  background-color: hsl(215, 28%, 17%);
-  padding: 1rem 2rem;
-}
-
-.register-header ul {
-  position: relative;
-  width: 30vw;
-  height: auto;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  top: 25px;
-}
-
-.register-header ul li {
-  font-size: 18px;
-  transition: 0.5s;
-}
-
-.register-header ul li:hover {
-  box-shadow: 0 0 0 1px hsl(200, 100%, 50%);
-  padding: 0.5rem;
-  background-color: hsl(215, 28%, 35%);
-}
-
 .register-section {
   display: flex;
   flex-direction: column;
@@ -78,77 +49,21 @@ main h1 {
   box-shadow: 0 0 0 1px hsl(200, 100%, 50%);
 }
 
-.reduced-logo {
-  margin-left: -150px;
-  width: 150px;
-  height: auto;
-  transition: 2s;
-}
-
-.reduced-logo:hover {
-  transform: rotateY(360deg);
-}
-
 .btn {
   cursor: pointer;
 }
 
-.btn:hover,
-.btn:focus {
+.btn:hover,.btn:focus {
   background-color: hsl(215, 28%, 50%);
 }
 
 @media (max-width: 1024px) {
-  .reduced-logo {
-    margin-top: 15px;
-    margin-left: 120px;
-  }
-
-  .register-header {
-    gap: 16rem;
-  }
-
-  .register-header ul {
-    flex-direction: column;
-    top: 0px;
-  }
-  .register-header ul li {
-    text-align: center;
-    width: 21vw;
-  }
-  .register-header ul li:hover {
-    cursor: pointer;
-    padding: 0.3rem;
-  }
-
   .register-section {
     margin-left: 35%;
   }
 }
 
 @media (max-width: 768px) {
-  .reduced-logo {
-    margin-top: 15px;
-    margin-left: 50px;
-  }
-
-  .register-header {
-    gap: 5rem;
-  }
-
-  .register-header ul {
-    flex-direction: column;
-    top: 0px;
-  }
-  .register-header ul li {
-    text-align: center;
-    width: 21vw;
-  }
-  .register-header ul li:hover {
-    cursor: pointer;
-    padding: 0.3rem;
-  }
-
   .register-section {
     margin-left: 25%;
   }

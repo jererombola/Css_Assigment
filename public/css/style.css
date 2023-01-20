@@ -27,6 +27,7 @@ main .section1 ul {
   display: flex;
   justify-content: space-between;
   padding-bottom: 5rem;
+  flex-wrap: wrap;
 }
 main .section1 img {
   width: 15vw;
@@ -37,11 +38,13 @@ main .section1 img {
 main .section1 p {
   color: #1f2937;
   font-size: 18px;
+  margin: 1rem 0;
 }
 
 main .section2 {
   background-color: #e5e7eb;
   padding: 8rem;
+  text-align: center;
 }
 main .section2 .quote {
   color: #1f2937;
@@ -67,9 +70,61 @@ main .section3 div {
   border: #e5e7eb 2px solid;
   background-color: #3882f6;
   width: 6.5rem;
-  height: auto;
+  height: 2rem;
   border-radius: 5px;
   align-items: center;
   text-align: center;
   padding: 2px 0;
+}
+
+
+@media (max-width: 1024px) {
+  main .section1 img {
+    width: 30vw;
+    height: 360px;
+    border: #3882f6 2px solid;
+  }
+
+  main .section2{
+    padding: 3rem ;
+  }
+ 
+  main .section2 .sign {
+    width: 9
+  }
+  main .section3 div {
+    width: 5.5rem;
+    height: 2rem;
+  }
+
+  main .section3 article {
+    width: 40vw;
+   }
+}
+
+@media (max-width: 768px) {
+
+  main .section1{
+    padding: 0;
+  }
+  main .section1 ul{
+    text-align: center;
+    display: block;
+    padding-bottom: 1rem;
+  }
+
+  main .section1 img {
+    width: 40vw;
+    height: fit-content;
+    border: #3882f6 2px solid;
+  }
+
+  main .section3 div {
+    margin-top: 1rem;
+    width: 5.5rem;
+    height: 2rem;
+  }
+  main .section3 article {
+   width: 50vw;
+  }
 }
