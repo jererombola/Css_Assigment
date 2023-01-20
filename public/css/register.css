@@ -98,10 +98,126 @@ main h1 {
   background-color: hsl(215, 28%, 50%);
 }
 
+@media (max-width: 1877px) {
+  .reduced-logo {
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+
+  .register-header {
+    gap: 32rem;
+  }
+
+  .register-header ul {
+    width: 40vw;
+    top: 25px;
+  }
+
+  .register-header ul li {
+    text-align: center;
+    width: 10vw;
+  }
+
+  .register-header ul li:hover {
+    cursor: pointer;
+    padding: 0.3rem;
+  }
+  .register-section {
+    margin-left: 42%;
+  }
+}
+
+@media (max-width: 1677px) {
+  .reduced-logo {
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+
+  .register-header {
+    gap: 32rem;
+  }
+
+  .register-header ul {
+    width: 40vw;
+    top: 25px;
+  }
+
+  .register-header ul li {
+    text-align: center;
+    width: 10vw;
+  }
+
+  .register-header ul li:hover {
+    cursor: pointer;
+    padding: 0.3rem;
+  }
+  .register-section {
+    margin-left: 41%;
+  }
+}
+
+@media (max-width: 1477px) {
+  .reduced-logo {
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+
+  .register-header {
+    gap: 32rem;
+  }
+
+  .register-header ul {
+    width: 40vw;
+    top: 25px;
+  }
+
+  .register-header ul li {
+    text-align: center;
+    width: 10vw;
+  }
+
+  .register-header ul li:hover {
+    cursor: pointer;
+    padding: 0.3rem;
+  }
+  .register-section {
+    margin-left: 40%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .reduced-logo {
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+
+  .register-header {
+    gap: 26rem;
+  }
+
+  .register-header ul {
+    width: 43vw;
+    top: 25px;
+  }
+
+  .register-header ul li {
+    text-align: center;
+    width: 10vw;
+  }
+
+  .register-header ul li:hover {
+    cursor: pointer;
+    padding: 0.3rem;
+  }
+  .register-section {
+    margin-left: 38%;
+  }
+}
+
 @media (max-width: 1024px) {
   .reduced-logo {
     margin-top: 15px;
-    margin-left: 120px;
+    margin-left: 50px;
   }
 
   .register-header {
@@ -111,6 +227,7 @@ main h1 {
   .register-header ul {
     flex-direction: column;
     top: 0px;
+    width: 20vw;
   }
   .register-header ul li {
     text-align: center;
