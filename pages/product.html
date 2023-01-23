@@ -1,69 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../public/css/product.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="../public/css/product.css" />
     <title>Final Fantasy VII REMASTERED PS5</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header class="pages-header">
-        <picture>
-          <a href="../index.html"><img class="reduced-logo" src="../public/img/Reduced-Logo.jpg" alt="Logo"/></a>
-        </picture>
-  
-        <nav>
-          <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="">PlayStation</a></li>
-            <li><a href="">Xbox</a></li>
-            <li><a href="">Nintendo</a></li>
-          </ul>
-        </nav>
-      </header>
+      <picture>
+        <a href="../index.html"
+          ><img
+            class="reduced-logo"
+            src="../public/img/Reduced-Logo.jpg"
+            alt="Logo"
+        /></a>
+      </picture>
+
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/product.html">PlayStation</a></li>
+          <li><a href="#Xbox-games">Xbox</a></li>
+          <li><a href="#Nintendo-games">Nintendo</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
-        <h1>Final Fantasy VII Remake (PS5)</h1>
-        <section>
-            <ul>
-                <li>
-                    <picture>
-                        <img id="Cover Image" src="../public/img/final_fantasy_ remake_complete.jpg" alt="Final Fantasy Cover Complete">
-                    </picture>
-                </li>
-                <li>
-                    <picture>
-                        <img src="../public/img/final_fantasy_ remake_complete_1.jpg" alt="Final Fantasy Gameplay, Cloud Strife in a battle ">
-                    </picture>
-                </li>
-                <li>
-                    <picture>
-                        <img src="../public/img/final_fantasy_ remake_complete_2.jpg" alt="Final Fantasy Gameplay, Cloud Strife is taking out his sword">
-                    </picture>
-                </li>
-            </ul>
-            
-            <article>
-                <p>Immerse yourself in the city of Midgar like never before, with improved textures, lighting, and background environments</p>
-                <p>Players can switch between two game modes: "graphics mode" Prioritizes 4K high-resolution graphics and - "performance mode" Prioritizes smooth action at 60 frames per second</p>
-                <p>Capture and share your memorable in-game moments with a fully customizable "photo mode"</p>
-                <p>Players can enjoy immersive battles using the two-way PlayStation 5 controller with its haptic feedback integration.</p>
-                <div>
-                    <span>Price: 80$</span>
-                    <input type="button" value="Buy">
-                </div>
-            </article>
-        </section>
+      <h1>Products</h1>
+      <h2>PlayStation 5 Games</h2>
+      <section class="game-platform">
+        <div class="game-display">
+          <div class="game-display__card">
+            <img
+              src="../public/img/Elden_Ring_Cover.jpg"
+              alt="Elden Ring cover" />
+            <p>Price 59.99$</p>
+          </div>
+          <p class="game-display__description">
+            Elden Ring for PC is an action role playing game (ARPG) written by
+            superstars George R R Martin (the author of the Song of Ice and Fire
+            series of books which begat television show Game of Thrones) and
+            Hidetaka Miyazake (who is famed for many popular video games: from
+            the Souls series, to Bloodborne, to Sekiro amongst many others).
+          </p>
+          <button class="game-display__btn btn-order">ORDER NOW!</button>
+        </div>
+      </section>
+      <section class="games-background">
+        <div class="games-container">
+          <div class="game">
+            <img src="../public/img/Fifa_23_Cover.jpg" alt="game cover" />
+            <p>Price: 39.99$</p>
+            <button class="game-show-more__btn btn-order">Show more</button>
+          </div>
+          <div class="game">
+            <img src="../public/img/gottham-knights.webp" alt="game cover" />
+            <p>Price: 49.99$</p>
+            <button class="game-show-more__btn btn-order">Show more</button>
+          </div>
+          <div class="game">
+            <img
+              src="../public/img/final_fantasy_ remake_cover.jpg"
+              alt="game cover" />
+            <p>Price: 39.99$</p>
+            <button class="game-show-more__btn btn-order">Show more</button>
+          </div>
+          <div class="game">
+            <img src="../public/img/gow-ragnarok.webp" alt="game cover" />
+            <p>Price: 59.99$</p>
+            <button class="game-show-more__btn btn-order">Show more</button>
+          </div>
+        </div>
+      </section>
+      <section class="games-background">
+        <h2>Xbox Games</h2>
+        <div id="Xbox-games" class="game-platform">
+          <div class="game-display">
+            <div class="game-display__card">
+              <img src="../public/img/cyberpunk.png" alt="Elden Ring cover" />
+              <p>Price 59.99$</p>
+            </div>
+            <p class="game-display__description">
+              Cyberpunk 2077 is a single-player, first-person perspective
+              action-RPG developed by CD Projekt Red, the developer of The
+              Witcher series. Based on a tabletop game developed by Michael
+              Pondsmith back in the 1980s, CP2077 is steeped in the themes and
+              aesthetics of the cyberpunk genre.
+            </p>
+            <button class="game-display__btn btn-order">ORDER NOW!</button>
+            <a class="back-to-top__btn btn-order" href="../pages/product.html"
+              >Back to top</a
+            >
+          </div>
+        </div>
+        <div class="games-container">
+          <div class="game">
+            <img src="../public/img/assassins-creed.avif" alt="game cover" />
+            <p>Price: 39.99$</p>
+            <button class="game-show-more__btn btn-order">Show more</button>
+          </div>
+          <div class="game">
+            <img src="../public/img/cuphead.webp" alt="game cover" />
+            <p>Price: 49.99$</p>
+            <button class="game-show-more__btn btn-order">Show more</button>
+          </div>
+          <div class="game">
+            <img src="../public/img/assetto-corsa.webp" alt="game cover" />
+            <p>Price: 39.99$</p>
+            <button class="game-show-more__btn btn-order">Show more</button>
+          </div>
+          <div class="game">
+            <img src="../public/img/sea-of-thieves.jfif" alt="game cover" />
+            <p>Price: 59.99$</p>
+            <button class="game-show-more__btn btn-order">Show more</button>
+          </div>
+        </div>
+      </section>
+      <section id="Nintendo-games" class="games-background">
+        <h2>Nintendo Games</h2>
+        <div class="game-platform">
+          <div class="game-display">
+            <div class="game-display__card">
+              <img
+                src="../public/img/nintendo-mario-kart.webp"
+                alt="Elden Ring cover" />
+              <p>Price 59.99$</p>
+            </div>
+            <p class="game-display__description">
+              Mario Kart 8 Deluxe is an instantly recognisable cart racing game,
+              the eighth in the series from Nintendo. It features the iconic
+              plumber, Mario, and all his friends from the games: Yoshi,
+              Princess Peaches, Bowser, and, of course, Mario’s green-attired
+              brother, Luigi and many more. There are forty-two characters to
+              choose from altogether, many instantly recognisable from popular
+              culture.
+            </p>
+            <button class="game-display__btn btn-order">ORDER NOW!</button>
+            <a class="back-to-top__btn btn-order" href="../pages/product.html"
+              >Back to top</a
+            >
+          </div>
+        </div>
+        <div class="games-container">
+          <div class="game">
+            <img
+              src="../public/img/nintendo-animal-crossing.webp"
+              alt="game cover" />
+            <p>Price: 39.99$</p>
+            <button class="game-show-more__btn btn-order">Show more</button>
+          </div>
+          <div class="game">
+            <img src="../public/img/nintendo-carnival.jfif" alt="game cover" />
+            <p>Price: 49.99$</p>
+            <button class="game-show-more__btn btn-order">Show more</button>
+          </div>
+          <div class="game">
+            <img src="../public/img/nintendo-clubhouse.webp" alt="game cover" />
+            <p>Price: 39.99$</p>
+            <button class="game-show-more__btn btn-order">Show more</button>
+          </div>
+          <div class="game">
+            <img
+              src="../public/img/nintendo-mario-sonic.webp"
+              alt="game cover" />
+            <p>Price: 59.99$</p>
+            <button class="game-show-more__btn btn-order">Show more</button>
+          </div>
+        </div>
+      </section>
     </main>
-
     <footer>
-        <p>Copyright GamePlayStore 2023</p>
+      <p>Copyright GamePlayStore 2023</p>
     </footer>
-    
-</body>
+  </body>
 </html>
