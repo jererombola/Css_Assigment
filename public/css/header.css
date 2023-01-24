@@ -21,7 +21,7 @@ header .sec1 {
 header .sec1 ul {
   display: flex;
   justify-content: space-between;
-  gap:10vw;
+  gap: 10vw;
 }
 
 header .sec1 li {
@@ -73,7 +73,7 @@ header .sec2 div {
   transition: 2s;
 }
 
-header picture{
+header picture {
   width: 0vw;
 }
 
@@ -81,12 +81,12 @@ header picture{
   transform: rotateY(360deg);
 }
 
-@media  (max-width: 1024px) {
+@media (max-width: 1024px) {
   header {
     background-color: hsl(215, 28%, 17%);
     padding: 1rem 5vw 5vw 5vw;
   }
- 
+
   header ul li {
     text-align: center;
     width: 21vw;
@@ -97,10 +97,10 @@ header picture{
     padding: 0.3rem;
   }
   header .sec1 ul {
-   gap:5vw;
+    gap: 5vw;
   }
 
-  header .sec2{
+  header .sec2 {
     display: block;
   }
 
@@ -114,7 +114,7 @@ header picture{
     font-weight: bolder;
     width: auto;
   }
-  
+
   header .sec2 p {
     width: auto;
   }
@@ -126,11 +126,9 @@ header picture{
     width: 100px;
     height: auto;
   }
- 
 }
 
-@media  (max-width: 768px) {
-
+@media (max-width: 768px) {
   header ul {
     flex-direction: column;
     top: 0px;
@@ -144,10 +142,9 @@ header picture{
     padding: 0.3rem;
   }
   header .sec1 ul {
-    gap:0;
-   }
+    gap: 0;
+  }
 }
-
 
 /*------------------------------------------------------PAGES-HEADER------------------------------------------------------*/
 .pages-header {
@@ -156,11 +153,16 @@ header picture{
   gap: 40vw;
   background-color: hsl(215, 28%, 17%);
   padding: 1rem 5vw 2rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
-.pages-header picture{
-  width: 0vw;
+.pages-header img {
+  width: 9rem;
 }
+
 .pages-header ul {
+  margin-top: 2rem;
   width: 30vw;
   height: auto;
   display: flex;
@@ -180,10 +182,14 @@ header picture{
 }
 
 @media (max-width: 1024px) {
+  .pages-header img {
+    width: 15rem;
+  }
 
   .pages-header ul {
     flex-direction: column;
-    top: 0px;
+    margin-top: 1rem;
+    margin-right: -6rem;
   }
   .pages-header ul li {
     text-align: center;
@@ -193,15 +199,19 @@ header picture{
     cursor: pointer;
     padding: 0.3rem;
   }
-
 }
 
 @media (max-width: 768px) {
+  .pages-header img {
+    width: 13rem;
+  }
 
   .pages-header ul {
     flex-direction: column;
-    top: 0px;
+    margin-top: 1rem;
+    margin-right: -4rem;
   }
+
   .pages-header ul li {
     text-align: center;
     width: 21vw;
@@ -210,5 +220,4 @@ header picture{
     cursor: pointer;
     padding: 0.3rem;
   }
-
 }

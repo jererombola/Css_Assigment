@@ -53,8 +53,33 @@ main h1 {
   cursor: pointer;
 }
 
-.btn:hover,.btn:focus {
+.btn:hover,
+.btn:focus {
   background-color: hsl(215, 28%, 50%);
+}
+
+@media (max-width: 1877px) {
+  .register-section {
+    margin-left: 42%;
+  }
+}
+
+@media (max-width: 1677px) {
+  .register-section {
+    margin-left: 41%;
+  }
+}
+
+@media (max-width: 1477px) {
+  .register-section {
+    margin-left: 40%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .register-section {
+    margin-left: 38%;
+  }
 }
 
 @media (max-width: 1024px) {
