@@ -17,7 +17,7 @@ main h1 {
 
 main form {
   text-align: center;
-  padding: 0 3rem;
+  padding: 0 15vw;
 }
 
 .register-input-group {
@@ -40,6 +40,7 @@ form input {
   color: white;
   font-weight: lighter;
   transition: 0.5s;
+  max-block-size: 460px;
 }
 form input:focus {
   box-shadow: 0 0 0 1px hsl(200, 100%, 50%);
@@ -59,7 +60,8 @@ form input:focus {
  
   main form {
     text-align: center;
-    padding: 0 12rem;
+    padding: 0 25vw;
+
   }
   
 }
