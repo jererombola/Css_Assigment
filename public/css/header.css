@@ -21,41 +21,32 @@ header .sec1 {
 header .sec1 ul {
   display: flex;
   justify-content: space-between;
-  gap: 10vw;
+  flex-direction: column;
+  gap: 0;
 }
 
 header .sec1 li {
   font-size: 18px;
   transition: 0.5s;
+  text-align: center;
 }
+
 header .sec1 li:hover {
   box-shadow: 0 0 0 1px hsl(200, 100%, 50%);
   padding: 0.5rem;
   background-color: hsl(215, 28%, 35%);
+  cursor: pointer;
+  padding: 0.3rem;
 }
-header .sec2 {
-  display: flex;
-  gap: 3vw;
+
+header .sec2 img {
+  display: none;
 }
 
 header .sec2 h1 {
   font-size: 48px;
   color: #f9faf8;
   font-weight: bolder;
-  width: 50vw;
-  height: auto;
-}
-
-header .sec2 p {
-  font-size: 18px;
-  margin-bottom: 10px;
-  width: 50vw;
-  height: auto;
-}
-
-header .sec2 img {
-  width: 33vw;
-  height: auto;
 }
 
 header .sec2 div {
@@ -68,7 +59,8 @@ header .sec2 div {
 }
 
 .reduced-logo {
-  width: 12vw;
+  width: 40vw;
+  max-width: 220px;
   height: auto;
   transition: 2s;
 }
@@ -81,98 +73,94 @@ header picture {
   transform: rotateY(360deg);
 }
 
-@media (max-width: 1024px) {
-  header {
-    background-color: hsl(215, 28%, 17%);
-    padding: 1rem 5vw 5vw 5vw;
-  }
-
-  header ul li {
+@media screen and (min-width: 768px) {
+ 
+  header .sec1 li {
     text-align: center;
-    width: 21vw;
+   gap: 5vw;
   }
 
-  header ul li:hover {
+  header .sec1 li:hover {
     cursor: pointer;
     padding: 0.3rem;
   }
+
+  
+}
+
+@media screen and (min-width: 1024px) {
+  
   header .sec1 ul {
+    display: flex;
+    flex-direction: row;
     gap: 5vw;
+  }
+  
+  header .sec1 li {
+    font-size: 18px;
+    transition: 0.5s;
+    width: 21vw;
+
+  }
+
+  header .sec1 li:hover {
+    padding: 0.5rem;
   }
 
   header .sec2 {
-    display: block;
+    display: flex;
+    gap: 3vw;
   }
 
   header .sec2 h1 {
-    width: auto;
-  }
-
-  header .sec2 h1 {
-    font-size: 48px;
-    color: #f9faf8;
-    font-weight: bolder;
-    width: auto;
+    width: 50vw;
+    height: auto;
   }
 
   header .sec2 p {
-    width: auto;
+    font-size: 18px;
+    margin-bottom: 10px;
+    width: 50vw;
+    height: auto;
   }
 
   header .sec2 img {
-    display: none;
-  }
-  .reduced-logo {
-    width: 100px;
+    display: flex;
+    width: 33vw;
     height: auto;
   }
-}
 
-@media (max-width: 768px) {
-  header ul {
-    flex-direction: column;
-    top: 0px;
+  .reduced-logo {
+    width: 12vw;   
   }
-  header ul li {
-    text-align: center;
-    width: 21vw;
-  }
-  header ul li:hover {
-    cursor: pointer;
-    padding: 0.3rem;
-  }
-  header .sec1 ul {
-    gap: 0;
-  }
-}
 
+}
 /*------------------------------------------------------PAGES-HEADER------------------------------------------------------*/
 .pages-header {
   display: flex;
   justify-content: space-between;
-  gap: 40vw;
-  background-color: hsl(215, 28%, 17%);
-  padding: 1rem 5vw 2rem;
-  position: fixed;
-  z-index: 1;
-  width: 100%;
+   background-color: hsl(215, 28%, 17%);
+  padding: 1rem 2rem;
 }
-.pages-header img {
-  width: 9rem;
+
+.pages-header picture{
+  width: 0vw;
 }
 
 .pages-header ul {
-  margin-top: 2rem;
-  width: 30vw;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .pages-header ul li {
+  text-align: center;
+  width: 21vw;
+}
+
+.pages-header ul li:hover {
   font-size: 18px;
   transition: 0.5s;
+  cursor: pointer;
+  padding: 0.3rem;
 }
 
 .pages-header ul li:hover {
@@ -181,43 +169,29 @@ header picture {
   background-color: hsl(215, 28%, 35%);
 }
 
-@media (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
+
   .pages-header img {
-    width: 15rem;
+    width: 9rem;
   }
-
+  
   .pages-header ul {
-    flex-direction: column;
-    margin-top: 1rem;
-    margin-right: -6rem;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
+  
   .pages-header ul li {
-    text-align: center;
-    width: 21vw;
+    font-size: 18px;
+    transition: 0.5s;
   }
+  
   .pages-header ul li:hover {
-    cursor: pointer;
-    padding: 0.3rem;
+    box-shadow: 0 0 0 1px hsl(200, 100%, 50%);
+    padding: 0.5rem;
+    background-color: hsl(215, 28%, 35%);
   }
-}
-
-@media (max-width: 768px) {
-  .pages-header img {
-    width: 13rem;
-  }
-
-  .pages-header ul {
-    flex-direction: column;
-    margin-top: 1rem;
-    margin-right: -4rem;
-  }
-
-  .pages-header ul li {
-    text-align: center;
-    width: 21vw;
-  }
-  .pages-header ul li:hover {
-    cursor: pointer;
-    padding: 0.3rem;
-  }
+  
 }

@@ -15,14 +15,9 @@ main h1 {
   color: black;
 }
 
-.register-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 42.5%;
-  width: 280px;
-  gap: 15px;
-  margin-top: 20px;
+main form {
+  text-align: center;
+  padding: 0 3rem;
 }
 
 .register-input-group {
@@ -32,9 +27,10 @@ main h1 {
 
 .register-input-group label {
   color: black;
+  text-align: left;
 }
 
-.register-section input {
+form input {
   font-size: 1.25rem;
   padding: 0.5em;
   background-color: hsl(215, 28%, 35%);
@@ -45,12 +41,13 @@ main h1 {
   font-weight: lighter;
   transition: 0.5s;
 }
-.register-section input:focus {
+form input:focus {
   box-shadow: 0 0 0 1px hsl(200, 100%, 50%);
 }
 
 .btn {
   cursor: pointer;
+  margin-top: 1rem;
 }
 
 .btn:hover,
@@ -58,38 +55,11 @@ main h1 {
   background-color: hsl(215, 28%, 50%);
 }
 
-@media (max-width: 1877px) {
-  .register-section {
-    margin-left: 42%;
+@media screen and (min-width: 768px) {
+ 
+  main form {
+    text-align: center;
+    padding: 0 12rem;
   }
-}
-
-@media (max-width: 1677px) {
-  .register-section {
-    margin-left: 41%;
-  }
-}
-
-@media (max-width: 1477px) {
-  .register-section {
-    margin-left: 40%;
-  }
-}
-
-@media (max-width: 1200px) {
-  .register-section {
-    margin-left: 38%;
-  }
-}
-
-@media (max-width: 1024px) {
-  .register-section {
-    margin-left: 35%;
-  }
-}
-
-@media (max-width: 768px) {
-  .register-section {
-    margin-left: 25%;
-  }
+  
 }
