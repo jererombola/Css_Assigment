@@ -15,7 +15,7 @@ header {
 header .sec1 {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 header .sec1 ul {
@@ -37,25 +37,6 @@ header .sec1 li:hover {
   background-color: hsl(215, 28%, 35%);
   cursor: pointer;
   padding: 0.3rem;
-}
-
-header .sec2 img {
-  display: none;
-}
-
-header .sec2 h1 {
-  font-size: 48px;
-  color: #f9faf8;
-  font-weight: bolder;
-}
-
-header .sec2 div {
-  background-color: #3882f6;
-  width: 6.5rem;
-  height: auto;
-  border-radius: 5px;
-  text-align: center;
-  padding: 2px 1px;
 }
 
 .reduced-logo {
@@ -107,30 +88,7 @@ header picture {
     padding: 0.5rem;
   }
 
-  header .sec2 {
-    display: flex;
-    gap: 3vw;
-  }
-
-  header .sec2 h1 {
-    width: 50vw;
-    height: auto;
-  }
-
-  header .sec2 p {
-    font-size: 18px;
-    margin-bottom: 10px;
-    width: 50vw;
-    height: auto;
-  }
-
-  header .sec2 img {
-    display: flex;
-    width: 33vw;
-    height: auto;
-  }
-
-  .reduced-logo {
+   .reduced-logo {
     width: 12vw;   
   }
 
